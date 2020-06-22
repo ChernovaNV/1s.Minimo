@@ -1,0 +1,334 @@
+body {
+  width: 100%;
+  font-family: 'PlayfairDisplay-Regular';
+  color: #626262;
+  font-size: 14px;
+}
+
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* HEADER */
+
+.header {
+  max-width: 1062px;
+  margin: 70px auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.header__logo {
+  font-family: 'Inconsolata-Regular';
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 30px;
+  color: #000;
+}
+
+.nav {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.nav__link:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+
+/* SECTION */
+
+.section {
+  margin-bottom: 135px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section__suptitle {
+  font-family: 'Ubuntu-Light';
+  padding: 30px 0;
+  text-transform: uppercase;
+  color: #b4ad9e;
+  letter-spacing: -1px;
+}
+
+.section__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.section__text {
+  padding-right: 5px;
+}
+
+.section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  max-width: 420px;
+}
+
+
+/* SUGN UP */
+
+.sign-up {
+  margin-top: -10px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 287px;
+  background-color: #f0f0f0;
+}
+
+.sign-up__inner {
+  padding: 76px;
+}
+
+.sign-up__title {
+  text-align: center;
+  font-size: 30px;
+  color: #333;
+  padding-bottom: 76px;
+}
+
+.e-mail {
+  max-width: 400px;
+  margin: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.e-mail__input {
+  width: 350px;
+  border: none;
+  background-color: #f0f0f0;
+
+  font-family: 'PlayfairDisplay-Regular';
+  font-size: 14px;
+  color: #626262;
+  letter-spacing: -1px;
+}
+
+.e-mail__input::active {
+  text-decoration: none;
+}
+
+button {
+ border: none;
+  vertical-align: bottom;
+}
+
+/* LOAD MORE*/
+
+.section__load-more {
+  width: 170px;
+  margin: 165px auto 100px auto;
+}
+
+.btn {
+  padding: 20px 33px;
+  border: 1px solid #626262;
+  font-size: 20px;
+
+  transition: color .2s linear, background-color .2s linear;
+}
+
+.btn:hover {
+  background-color: #626262;
+  color: #fff;
+}
+
+
+/*PAGE SECTION*/
+
+span {
+  text-transform: uppercase;
+}
+
+.photo {
+  margin-top: 60px;
+}
+
+.quote {
+ font-family: 'PlayfairDisplay-Italic';
+}
+
+.share {
+  margin-bottom: 75px;
+  text-align: end;
+  color: #b4af9c;
+}
+
+.section__you-may {
+  width: 100%;
+  height: 435px;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.you-may__img {
+  width: 273px;
+}
+
+.you-may__text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section__comments {
+  height: 640px;
+  padding: 40px 0 100px;
+}
+
+
+.avatar {
+  position: absolute;
+}
+
+.comment {
+  width: 790px;
+  position: relative;
+  left: 110px;
+}
+
+.comment__autor {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.comment__text {
+  line-height: 1.5;
+}
+
+.comment__input {
+  width: 790px;
+  height: 70px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  position: relative;
+  left: 110px;
+  padding: 25px;
+  opacity: 0.5;
+}
+
+.connected {
+ width: 210px;
+margin: 40px 0 0 auto;
+}
+
+.connected span {
+color: #b4b0a4;
+  padding-right: 15px;
+}
+
+.connected .fa-twitter {
+  color: #c7c7c7;
+}
+
+.connected .fa-facebook-f {
+  color: #646464;
+}
+
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 45px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -90px;
+}
+
+
+.footer__nav-link {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  margin-right: 15px;
+
+  position: relative;
+}
+
+.footer__nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+
+  background-color: #000;
+  opacity: 0;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity .1s linear;
+}
+
+.footer__nav-link:hover:after {
+  opacity: 1;
+}
+
+.footer__social-media {
+ font-weight: bold;
+}
+
+.fab {
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
