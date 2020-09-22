@@ -1,0 +1,102 @@
+/* HEADER */
+
+.header {
+  max-width: 1800px;
+  width: 100%;
+  max-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    font-family: 'Inconsolata-Regular';
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 35px;
+    color: #000;
+  }
+
+  &__photo {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.nav {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: .2s linear font-weight, color;
+
+    &:hover {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  &--active {
+    font-weight: 900;
+    color: $color-main;
+    cursor: default;
+
+
+  }
+
+  &-toggle {
+    width: 30px;
+    padding: 10px 0;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 1;
+
+    &__item {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: $color-main;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+
+      &:before, &:after {
+        content:'';
+        width: 100%;
+        height: 3px;
+        background: $color-main;
+
+        position: absolute;
+        left: 0;
+        z-index: 1;
+      }
+
+      &:before {
+        top: -8px;
+      }
+
+      &:after {
+        bottom: -8px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-lg) {
+    display: none;
+  }
+}
+
+

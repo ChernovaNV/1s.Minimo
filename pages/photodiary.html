@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="vieport" content="wifth=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/fonts.css">
   <script src="https://kit.fontawesome.com/7b6eabd698.js" crossorigin="anonymous"></script>
 
   <title>Photodiary</title>
@@ -11,24 +11,29 @@
 <body>
 
   <header class="header">
-   <div class="header__container">
-     <a class="header__logo" href="/">Minimø</a>
-     <nav class="nav">
-       <a href="#" class="nav__link">Lifestyle</a>
-       <a href="/pages/photodiary.html" class="nav__link">Photodiary</a>
-       <a href="#" class="nav__link">Music</a>
-       <a href="#" class="nav__link">Travel</a>
-     </nav>
-   </div>
+    <div class="header__inner">
+      <div class="header__logo"><a href="../index.html">Minimø</a></div>
+       <nav class="nav">
+         <a href="#" class="nav__link">Lifestyle</a>
+         <a href="/pages/photodiary.html" class="nav__link nav--active">Photodiary</a>
+         <a href="#" class="nav__link">Music</a>
+         <a href="#" class="nav__link">Travel</a>
+       </nav>
 
-    <img src="/image/1.jpg" alt="photo">
+      <div class="nav-toggle">
+        <span class="nav-toggle__item"></span>
+      </div>
+    </div>
+
+     <img class="header__photo" src="../image/1.jpg" alt="photo">
+
   </header>
 
-  <section class="section">
-    <div class="container">
-      <h3 class="section__suptitle">Photodiary</h3>
-      <h2 class="section__title">The perfect weekend getaway</h2>
-      <div class="section__text">
+  <section class="section__post">
+    <div class="page-container">
+      <h3 class="suptitle">Photodiary</h3>
+      <h2 class="title">The perfect weekend getaway</h2>
+      <div class="text">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</b> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -44,14 +49,11 @@
        </blockquote> <!--/.quote -->
      </div>
 
-      <div class="section__text">
+      <div class="text">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <b>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,</b> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
       </div> <!-- /.section__text -->
-    </div> <!-- /.container -->
-  </section>
 
-  <div class="container">
-          <div class="share">
+      <div class="share">
          <snap>Share</snap>
          <a href="#" target="_blank">
           <i class="fab fa-facebook-f"></i>
@@ -70,33 +72,35 @@
          </a>
 
        </div>
-  </div>
+    </div> <!-- /.container -->
+  </section>
 
-<section class="section__you-may">
+<section class="section__like">
   <div class="container">
-    <div class="section__suptitle">You may also like</div>
-
-     <div class="section__inner">
-       <div>
-      <img class="you-may__img" src="../image/content/6.jpg" alt="">
-      <div class="you-may__text">Cold winter days</div>
+    <div class="like__suptitle">You may also like</div>
+    <div class="section__inner">
+      <div class="like__column">
+       <a>
+      <img src="../image/content/6.jpg" alt="">
+      </a>
+      <div class="like__title"><a href="">Cold winter days</a></div>
       </div>
-      <div>
-      <img class="you-may__img" src="../image/content/4.jpg" alt="">
-      <div class="you-may__text">A day exloring the Alps</div>
+      <div class="like__column">
+      <a href=""><img src="../image/content/4.jpg" alt=""></a>
+      <div class="like__title">A day exloring the Alps</div>
       </div>
-      <div>
-      <img class="you-may__img" src="../image/content/3.jpg" alt="">
-      <div class="you-may__text">American dream</div>
+      <div class="like__column">
+      <a href=""><img src="../image/content/3.jpg" alt=""></a>
+      <div class="like__title">American dream</div>
       </div>
-     </div>
+    </div>
   </div>
 
 </section>
 
 <section class="section__comments">
   <div class="container">
-    <div class="section__suptitle">2 comments</div>
+    <div class="suptitle">2 comments</div>
 
      <div class="section__inner">
       <img class="avatar" src="/image/photodiary/ava_1.jpg" alt="" class="avatar">
@@ -112,7 +116,7 @@
       <div class="comment">
         <div class="comment__autor">John Doe</div>
         <div class="comment__text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</div>
-        <div class="section__suptitle">Reply</div>
+        <div class="suptitle">Reply</div>
       </div>
     </div>
 

@@ -1,96 +1,115 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="vieport" content="wifth=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fonts.css">
   <script src="https://kit.fontawesome.com/7b6eabd698.js" crossorigin="anonymous"></script>
   <title>Minimo</title>
 </head>
 <body>
 
   <header class="header">
-   <div class="header__container">
-     <a class="header__logo" href="#">Minimø</a>
-     <nav class="nav">
-       <a href="#" class="nav__link">Lifestyle</a>
-       <a href="/pages/photodiary.html" class="nav__link">Photodiary</a>
-       <a href="#" class="nav__link">Music</a>
-       <a href="#" class="nav__link">Travel</a>
-     </nav>
-   </div>
+    <div class="header__inner">
+      <div class="header__logo" href="#">Minimø</div>
+       <nav class="nav">
+         <a href="#" class="nav__link">Lifestyle</a>
+         <a href="/pages/photodiary.html" class="nav__link">Photodiary</a>
+         <a href="#" class="nav__link">Music</a>
+         <a href="#" class="nav__link">Travel</a>
+       </nav>
 
-    <img src="/image/1.jpg" alt="photo">
+      <div class="nav-toggle">
+        <span class="nav-toggle__item"></span>
+      </div>
+    </div>
+
+     <img class="header__photo" src="image/1.jpg" alt="photo">
 
   </header>
 
-  <section class="section">
+  <section class="section__post">
     <div class="container">
-      <h3 class="section__suptitle">Photodiary</h3>
-      <h2 class="section__title">The perfect weekend getaway</h2>
-      <div class="section__text">
+      <h3 class="suptitle">Photodiary</h3>
+      <h2 class="title"><a href="#">The perfect weekend getaway</a></h2>
+      <div class="text">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
       </div> <!-- /.section__text -->
 
-      <h3 class="section__suptitle">Leave a comment</h3>
+      <h3 class="suptitle"><a class="post__btn" href="#">Leave a comment</a></h3>
 
     </div> <!-- /.container -->
   </section>
 
-  <section class="section">
+  <section class="section__articles">
     <div class="container">
       <div class="section__inner">
         <div class="column">
-          <img src="/image/content/1.jpg" alt="1">
+          <a href=""><img src="image/content/1.jpg" alt="1"></a>
 
-          <h3 class="section__suptitle">Lifestyle</h3>
-          <h2 class="section__title">More than just a music festival</h2>
-          <div class="section__text">
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">More than just a music festival</a></h2>
+          <div class="text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
 
          <div class="column">
-          <img src="/image/content/2.jpg" alt="2">
+          <a href=""><img src="image/content/2.jpg" alt="2"></a>
 
-          <h3 class="section__suptitle">Lifestyle</h3>
-          <h2 class="section__title">Life tastes better with coffee</h2>
-          <div class="section__text">
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Life tastes better with coffee</a></h2>
+          <div class="text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
-      </div>
-    </div> <!-- /.container -->
-  </section>
 
-  <section class="section">
-    <div class="container">
-      <div class="section__inner">
         <div class="column">
-          <img src="/image/content/3.jpg" alt="1">
+          <a href=""><img src="image/content/3.jpg" alt="1"></a>
 
-          <h3 class="section__suptitle">Photodiary</h3>
-          <h2 class="section__title">American dream</h2>
-          <div class="section__text">
+          <h3 class="suptitle">Photodiary</h3>
+          <h2 class="title"><a href="">American dream</a></h2>
+          <div class="text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
 
          <div class="column">
-          <img src="/image/content/4.jpg" alt="2">
+          <a href=""><img src="image/content/4.jpg" alt="2"></a>
 
-          <h3 class="section__suptitle">Photodiary</h3>
-          <h2 class="section__title">A day exploring the Alps</h2>
-          <div class="section__text">
+          <h3 class="suptitle">Photodiary</h3>
+          <h2 class="title"><a href="">A day exploring the Alps</a></h2>
+          <div class="text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
+
+        <div class="column">
+          <a href=""><img src="image/content/5.jpg" alt="1"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Top 10 song for running</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+
+         <div class="column">
+          <a href=""><img src="image/content/6.jpg" alt="2"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Cold winter days</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+
       </div>
     </div> <!-- /.container -->
   </section>
+
 
   <section class="sign-up">
-   <div class="container">
     <div class="sign-up__inner">
       <div class="sign-up__title">Sign up for our newsletter!</div>
 
@@ -102,41 +121,48 @@
     </form>
     </div>
 
-   </div>
   </section>
 
-<section class="section">
+<section class="section__articles">
     <div class="container">
       <div class="section__inner">
-        <div class="column">
-          <img src="/image/content/5.jpg" alt="1">
+       <div class="column">
+          <a href=""><img src="image/content/4.jpg" alt="2"></a>
 
-          <h3 class="section__suptitle">Lifestyle</h3>
-          <h2 class="section__title">Top 10 song for running</h2>
-          <div class="section__text">
+          <h3 class="suptitle">Photodiary</h3>
+          <h2 class="title"><a href="">A day exploring the Alps</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+
+        <div class="column">
+          <a href=""><img src="image/content/5.jpg" alt="1"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Top 10 song for running</a></h2>
+          <div class="text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
 
          <div class="column">
-          <img src="/image/content/6.jpg" alt="2">
+          <a href=""><img src="image/content/6.jpg" alt="2"></a>
 
-          <h3 class="section__suptitle">Lifestyle</h3>
-          <h2 class="section__title">Cold winter days</h2>
-          <div class="section__text">
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Cold winter days</a></h2>
+          <div class="text">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
       </div>
+       <div class="load-more">
+  <a href="#" class="btn">Load more</a>
+ </div>
     </div> <!-- /.container -->
   </section>
 
- <section class="section__load-more">
-  <a href="#" class="btn">Load more</a>
- </section>
-
 <footer class="footer">
-  <div class="container">
    <div class="footer__inner">
      <div class="footer__nav">
        <a href="#" class="footer__nav-link">Terms and conditions</a>
@@ -155,7 +181,6 @@
         <i class="fab fa-instagram"></i>
        </a>
      </div>
-    </div>
   </div>
 </footer>
 
