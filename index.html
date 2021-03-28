@@ -9,25 +9,30 @@
 </head>
 <body>
 
+   <!-- Header -->
   <header class="header">
     <div class="header__inner">
       <div class="header__logo" href="#">Minimø</div>
        <nav class="nav">
-         <a href="#" class="nav__link">Lifestyle</a>
-         <a href="/pages/photodiary.html" class="nav__link">Photodiary</a>
-         <a href="#" class="nav__link">Music</a>
-         <a href="#" class="nav__link">Travel</a>
+         <a href="pages/photodiary.html" class="nav__link">Lifestyle</a>
+         <a href="pages/photodiary.html" class="nav__link">Photodiary</a>
+         <a href="pages/photodiary.html" class="nav__link">Music</a>
+         <a href="pages/photodiary.html" class="nav__link">Travel</a>
        </nav>
 
       <div class="nav-toggle">
-        <span class="nav-toggle__item"></span>
+        <span class="nav-toggle__item nav-toggle__item--1"></span>
+        <span class="nav-toggle__item nav-toggle__item--2"></span>
+        <span class="nav-toggle__item nav-toggle__item--3"></span>
       </div>
     </div>
 
-     <img class="header__photo" src="image/1.jpg" alt="photo">
+    <img class="header__photo" src="image/1.jpg">
+     <!-- <img class="header__photo" src="https://gl-img.rg.ru/uploads/images/2018/08/28/536825cf944be7c.jpg" alt="photo"> -->
 
   </header>
 
+  <!-- Post -->
   <section class="section__post">
     <div class="container">
       <h3 class="suptitle">Photodiary</h3>
@@ -40,7 +45,7 @@
 
     </div> <!-- /.container -->
   </section>
-
+  <!-- Articles -->
   <section class="section__articles">
     <div class="container">
       <div class="section__inner">
@@ -107,8 +112,7 @@
       </div>
     </div> <!-- /.container -->
   </section>
-
-
+  <!-- Sign -->
   <section class="sign-up">
     <div class="sign-up__inner">
       <div class="sign-up__title">Sign up for our newsletter!</div>
@@ -116,14 +120,14 @@
     <form class="e-mail" action="" method="post">
       <input class="e-mail__input" name="e-mail" type="text" placeholder="Enter a valid email address" >
       <button type="submit">
-        <img src="/image/send_icon.png" alt="send">
+        <img src="image/send_icon.png" alt="send">
       </button>
     </form>
     </div>
 
   </section>
-
-<section class="section__articles">
+  <!-- Articles -->
+  <section class="section__articles">
     <div class="container">
       <div class="section__inner">
        <div class="column">
@@ -135,7 +139,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
-
         <div class="column">
           <a href=""><img src="image/content/5.jpg" alt="1"></a>
 
@@ -145,7 +148,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
-
          <div class="column">
           <a href=""><img src="image/content/6.jpg" alt="2"></a>
 
@@ -155,14 +157,76 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
           </div> <!-- /.section__text -->
         </div>
+        <!-- Hidden Column -->
+        <div class="column column--hidden">
+          <a href=""><img src="image/content/4.jpg" alt="2"></a>
+
+          <h3 class="suptitle">Photodiary</h3>
+          <h2 class="title"><a href="">A day exploring the Alps</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+        <div class="column column--hidden">
+          <a href=""><img src="image/content/5.jpg" alt="1"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Top 10 song for running</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+        <div class="column column--hidden">
+          <a href=""><img src="image/content/6.jpg" alt="2"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Cold winter days</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+        <div class="column column--hidden">
+          <a href=""><img src="image/content/4.jpg" alt="2"></a>
+
+          <h3 class="suptitle">Photodiary</h3>
+          <h2 class="title"><a href="">A day exploring the Alps</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+        <div class="column column--hidden">
+          <a href=""><img src="image/content/5.jpg" alt="1"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Top 10 song for running</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
+        <div class="column column--hidden">
+          <a href=""><img src="image/content/6.jpg" alt="2"></a>
+
+          <h3 class="suptitle">Lifestyle</h3>
+          <h2 class="title"><a href="">Cold winter days</a></h2>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...</p>
+          </div> <!-- /.section__text -->
+        </div>
       </div>
        <div class="load-more">
-  <a href="#" class="btn">Load more</a>
- </div>
+        <button href="#" class="btn">Load more</button>
+       </div>
     </div> <!-- /.container -->
   </section>
 
-<footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
    <div class="footer__inner">
      <div class="footer__nav">
        <a href="#" class="footer__nav-link">Terms and conditions</a>
@@ -184,5 +248,7 @@
   </div>
 </footer>
 
+<script src="js/burger.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
